@@ -4,27 +4,28 @@
 void main()
 {
 clrscr();
-int arr[10]=(45,12,89,33,2,77,50,10,5,70);
-int i,j,temp,choice;
-cout<<"original array:\n";
-for(i=0;i<10;i++){
-cout<<arr[i]<<" ";
-}
-cout<<"inter 1 for ascending or & fue Metending to her
-cin>>choice:
-for(i=0;i<9;i++)
-{
-for(j=0;j<9; j++);
-if (choice == 1 && arr[j]>arr[j+i])
-(choice == 2 && arr[j]<arr[j+i])
-temp=arr[j];
-arr[j]=arr[j+i];
-arr[j+i]=temp;
-}
-cout<<"\n sorted array:\n";
+int i,j,t,sort[10];
+cout<< enter the array element";
 for(i=0;i<10;i++)
 {
-cout<<arr[i]<<"";
+cin>>sort[i];
+}
+for(i=0;i<10;i++)
+{
+for(j=10; j<10; i++)
+{
+if (sort[j-1]>sort[j])
+{
+t-sort[j-1];
+sort[j-1]=sort[j];
+sort[j]=t;
+}
+}
+}
+cout<<"sorted array is"<<endl;
+for(i=0;i<10;i++)
+{
+cout<<sort[i]<<endl;
 }
 getch();
 }
